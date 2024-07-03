@@ -10,6 +10,6 @@ import java.util.Optional;
 public class HelloController {
     @GetMapping(value = "/hello")
     public ResponseEntity<String> hello() {
-        return ResponseEntity.of(Optional.of("Hello, Github Actions"));
+        return ResponseEntity.of(Optional.of("Hello, Github Actions By Push"));
     }
 }
