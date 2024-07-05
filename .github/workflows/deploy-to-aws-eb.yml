@@ -41,6 +41,7 @@ jobs:
       run: |
         mkdir -p deployment
         cp build/libs/hello-github-action-0.0.1-SNAPSHOT.jar deployment/hello-github-action-0.0.1-SNAPSHOT.jar
+        ls -al
         cp Procfile deployment/
         cd deployment && zip -r hello-github-action-${{steps.current-time.outputs.formattedTime}} .
         ls    
