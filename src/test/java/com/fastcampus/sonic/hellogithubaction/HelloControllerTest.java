@@ -30,7 +30,7 @@ class HelloControllerTest {
     @Test
     void helloTest() throws Exception {
         // given
-        String testMessage = "Hello, Github Actions";
+        String testMessage = "Hello, Github Actions 2";
 
         // when-then
         mockMvc.perform(get("/hello"))
