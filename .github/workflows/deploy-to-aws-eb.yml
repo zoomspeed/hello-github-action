@@ -51,7 +51,7 @@ jobs:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: hello-api
-        environment_name: Hello-api-env-1
+        environment_name: Hello-api-env
         version_label: hello-api-app-version-${{steps.current-time.outputs.formattedTime}}
         region: ap-northeast-2
         deployment_package: deployment/hello-github-action-${{steps.current-time.outputs.formattedTime}}.zip
